@@ -14,9 +14,6 @@ window.resizable(False, False)
 # Durum bayrağı
 stop_flag = False
 
-def telegram():
-    import webbrowser
-    webbrowser.open_new_tab('t.me/TalkToGabry_bot')
 
 def pick_neon():
     global stop_flag
@@ -63,10 +60,7 @@ Label(window, text="Press 'N' to pick Neon (global)\nPress 'P' to stop",
       fg='black', font=('Helvetica', 12)) \
     .grid(row=1, column=0, padx=20)
 
-# Telegram butonu (opsiyonel)
-Button(window, text="Contact via Telegram", command=telegram,
-       fg='black', font=("Helvetica", 12)) \
-    .grid(row=3, column=0, pady=10)
+
 
 if __name__ == "__main__":
     window.mainloop()
